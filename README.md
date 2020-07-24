@@ -14,9 +14,9 @@
 #### 2. npm run build 
 This will create a "build" folder in your “Frontend”
 
-#### 3. Copy the contents of the build to your “Backend/public” folder
+#### 3. Copy the contents of the "build" folder in your “Frontend” to your “Backend/public” folder
 
-#### 4. Go to “App.js” (or server.js, whatever file is your entry point) in the root folder of our “Backend”
+#### 4. Go to “App.js” (or server.js, whatever file is your entry point for the backend server) in the root folder of our “Backend”
 Add the below code at the top/where you declare the constants
 ```javascript 
 const path = require('path'); 
