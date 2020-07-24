@@ -10,31 +10,31 @@
 
 ![MERN](https://github.com/Sasi-Koramutla/mernstackdeploy/blob/master/MERN.jpeg)
 ## Deployment Steps
-##### Go to your App’s Frontend folder in the command line
-##### npm run build 
-    -	this will create a build folder in your “Frontend”
-    -	copy the contents of the build to your “Backend/public” folder
-#### Go to “App.js” (or server.js, whatever file is your entry point) in the root folder of our “Backend”
-    -	Add the below code at the top/where you declare the constants
-    ```javascript 
-    const path = require('path'); 
-    ```
-    -	Add the below code after your controllers. This code points to the React build folder
-     ```javascript
-     EXPRESS_APP_NAME.use((req, res, next) => {
-        res.sendFile(path.resolve(__dirname, "public", "index.html"));
-      });
-      ```
+##### 1. Go to your App’s Frontend folder in the command line
+##### 2. npm run build 
+-	this will create a build folder in your “Frontend”
+-	copy the contents of the build to your “Backend/public” folder
+#### 3. Go to “App.js” (or server.js, whatever file is your entry point) in the root folder of our “Backend”
+-	Add the below code at the top/where you declare the constants
+```javascript 
+const path = require('path'); 
+```
+-	Add the below code after your controllers. This code points to the React build folder
+```javascript
+EXPRESS_APP_NAME.use((req, res, next) => {
+    res.sendFile(path.resolve(__dirname, "public", "index.html"));
+});
+```
 #### Keep the environment variables in .env and use “REACT_APP_” before all environment variables. Example below.
-    a.	REACT_APP_BACKEND_URL= https://twitterbattle-test.herokuapp.com/
+```javascript
+REACT_APP_BACKEND_URL=https://twitterbattle-test.herokuapp.com/
+```
 #### Perform the regular Heroku deployment steps
     a.	heroku login
     b.	rm -r node_modules
     c.	heroku create “YOUR_APP”
     d.	git add, commit,  and push
     e.	git push push heroku master
-
-
 
 For lab, you'll continue on your own to click the balloons in order to increase likes and press the pencil to show a pre-filled form to let you edit the whole field:
 
