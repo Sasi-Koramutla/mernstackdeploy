@@ -1,21 +1,21 @@
-# MERN Stack Combined App deployment in Heroku
+# MERN Stack Combined App Deployment on Heroku
 
 ## Assumptions
 1. You already have an App with Frontend and Backend folders like the below working on your local machine.
-        - App
-            - Frontend
-            - Backend
+    - App
+        - Frontend
+        - Backend
 2.	You have a basic understanding of deploying applications on Heroku
 
 
-## Define API
+## Deployment Steps
 
 
 1.	Go to your App’s Frontend folder in the command line
 2.	npm run build 
     -	this will create a build folder in your “Frontend”
     -	copy the contents of the build to your “Backend/public” folder
-3.	Go to “App.js” (or server.js, whatever file starts the node) in the root folder of our “Backend”
+3.	Go to “App.js” (or server.js, whatever file is your entry point) in the root folder of our “Backend”
     -	Add the below code at the top/where you declare the constants
             ```javascript 
             const path = require('path'); 
@@ -35,21 +35,6 @@
     e.	git push push heroku master
 
 
-## What we're building
-
-We live in a time where there are so many holidays! Many times we forget to celebrate. So we'll build a holidays app to create, show and delete our holidays, we'll also be able to update whether or not we've celebrated the holiday
-
-First we'll build our API which will just serve JSON. We'll create, update, and delete usin cURL
-
-![api](https://i.imgur.com/4jk0nOO.png)
-
-
-Once we have built and tested our back end we'll build our React front end using Create-React App
-
-
-Class build:
-
-![holidays app example](https://i.imgur.com/B3sP2wq.png)
 
 For lab, you'll continue on your own to click the balloons in order to increase likes and press the pencil to show a pre-filled form to let you edit the whole field:
 
