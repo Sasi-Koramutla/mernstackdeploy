@@ -2,9 +2,10 @@
 
 ## Assumptions
 1. You already have an App with Frontend and Backend folders like the below working on your local machine.
-    ### App
-        - Frontend
-        - Backend
+       ### App
+       #### | --> Frontend
+       #### | --> Frontend
+
 2.	You have a basic understanding of deploying applications on Heroku
 
 
