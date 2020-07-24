@@ -2,7 +2,6 @@
 
 ## Assumptions
 1. You already have an App with Frontend and Backend folders like the below working on your local machine.
-    ##### App Directory
        App
         |-- Frontend
         |-- Backend
