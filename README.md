@@ -27,7 +27,7 @@ EXPRESS_APP_NAME.use((req, res, next) => {
     res.sendFile(path.resolve(__dirname, "public", "index.html"));
 });
 ```
-#### 5. Keep the environment variables in .env and use “REACT_APP_” before all environment variables. Example below.
+#### 5. Keep the environment variables in .env and use “REACT_APP_” before all environment variables (example below). When you deploy on Heroku, you need to add them as "Config Vars"
 ```javascript
 REACT_APP_BACKEND_URL=https://twitterbattle-test.herokuapp.com/
 ```
