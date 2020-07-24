@@ -1,12 +1,12 @@
 # MERN Stack Combined App Deployment on Heroku
 
 ## Assumptions
-1. You already have an App with Frontend and Backend folders like the below working on your local machine.
+1. You already have an App with Frontend and Backend folders like the below working on your local machine
     ##### 
        App
         |-- Frontend
         |-- Backend
-2.	You have a basic understanding of deploying applications on Heroku.
+2.	You have a basic understanding of deploying applications on Heroku
 
 ![MERN](https://github.com/Sasi-Koramutla/mernstackdeploy/blob/master/MERN.jpeg)
 ## Deployment Steps
