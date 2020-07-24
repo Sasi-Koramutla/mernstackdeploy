@@ -12,9 +12,9 @@
 ## Deployment Steps
 ##### 1. Go to your App’s Frontend folder in the command line
 ##### 2. npm run build 
--	this will create a build folder in your “Frontend”
--	copy the contents of the build to your “Backend/public” folder
-#### 3. Go to “App.js” (or server.js, whatever file is your entry point) in the root folder of our “Backend”
+-	this will create a "build" folder in your “Frontend”
+#### 3. Copy the contents of the build to your “Backend/public” folder
+#### 4. Go to “App.js” (or server.js, whatever file is your entry point) in the root folder of our “Backend”
 -	Add the below code at the top/where you declare the constants
 ```javascript 
 const path = require('path'); 
@@ -25,34 +25,15 @@ EXPRESS_APP_NAME.use((req, res, next) => {
     res.sendFile(path.resolve(__dirname, "public", "index.html"));
 });
 ```
-#### Keep the environment variables in .env and use “REACT_APP_” before all environment variables. Example below.
+#### 5. Keep the environment variables in .env and use “REACT_APP_” before all environment variables. Example below.
 ```javascript
 REACT_APP_BACKEND_URL=https://twitterbattle-test.herokuapp.com/
 ```
-#### Perform the regular Heroku deployment steps
-    a.	heroku login
-    b.	rm -r node_modules
-    c.	heroku create “YOUR_APP”
-    d.	git add, commit,  and push
-    e.	git push push heroku master
-
-For lab, you'll continue on your own to click the balloons in order to increase likes and press the pencil to show a pre-filled form to let you edit the whole field:
-
-![holidays app lab portion](https://i.imgur.com/CvFFanb.png)
-
-## Set Up
-
-In student examples for today:
-
-ADDS an image of folder structure from SkETCH!!!
-
-1. `mkidr holidays`
-1. `cd holidays`
-1. `mkdir holidays_api`
-1. `cd holidays_api`
-1. `touch server.js`
-1. `npm init -y`
-1. set entry point as server.js
-1. `npm install express`
+#### 6. Perform the regular Heroku deployment steps
+-	heroku login
+-	rm -r node_modules
+-	heroku create “YOUR_APP”
+-	git add, commit and push
+-	git push push heroku master
 
 
