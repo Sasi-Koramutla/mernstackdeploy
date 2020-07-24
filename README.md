@@ -6,12 +6,12 @@
        App
         |-- Frontend
         |-- Backend
-2.	You have a basic understanding of deploying applications on Heroku
+2.	You have a basic understanding of deploying applications on Heroku.
 
-
+![MERN](https://github.com/Sasi-Koramutla/mernstackdeploy/blob/master/MERN.jpeg)
 ## Deployment Steps
-#### Go to your App’s Frontend folder in the command line
-#### npm run build 
+##### Go to your App’s Frontend folder in the command line
+##### npm run build 
     -	this will create a build folder in your “Frontend”
     -	copy the contents of the build to your “Backend/public” folder
 #### Go to “App.js” (or server.js, whatever file is your entry point) in the root folder of our “Backend”
