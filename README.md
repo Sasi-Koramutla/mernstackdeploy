@@ -36,6 +36,6 @@ REACT_APP_BACKEND_URL=https://twitterbattle-test.herokuapp.com/
 -	rm -r node_modules
 -	heroku create “YOUR_APP”
 -	git add, commit and push
--	git push push heroku master
+-	git push heroku master
 
 
